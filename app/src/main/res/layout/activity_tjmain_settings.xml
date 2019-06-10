@@ -7,16 +7,16 @@
 
     >
 
-        <TextView
-           android:id="@+id/ist_home_title"
-           android:paddingBottom="10px"
-           android:paddingTop="10px"
-           android:textColor="@android:color/white"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:gravity="center"
-           android:text="@string/ist_setting_title"
-           android:textSize="35px" />
+    <TextView
+        android:id="@+id/ist_home_title"
+        android:paddingBottom="10px"
+        android:paddingTop="10px"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ist_setting_title"
+        android:textSize="35px" />
 
 
     <TextView

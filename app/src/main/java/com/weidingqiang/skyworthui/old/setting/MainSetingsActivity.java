@@ -1,4 +1,4 @@
-package com.weidingqiang.skyworthui.setting;
+package com.weidingqiang.skyworthui.old.setting;
 
 import android.content.Context;
 import android.content.Intent;

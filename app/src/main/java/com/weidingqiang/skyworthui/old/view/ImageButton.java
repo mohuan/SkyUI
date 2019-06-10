@@ -1,6 +1,5 @@
-package com.weidingqiang.skyworthui.view;
+package com.weidingqiang.skyworthui.old.view;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;

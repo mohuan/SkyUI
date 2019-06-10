@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingRight="160dp"
+    android:paddingLeft="160dp"
+    >
 
-    <Button
-        android:id="@+id/setting_but"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="跳转setting"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/setting_but_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原setting"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/setting_but_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国学setting"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
