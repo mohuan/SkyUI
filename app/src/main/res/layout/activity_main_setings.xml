@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ist_settings_body"
+
+    >
+
+        <TextView
+           android:id="@+id/ist_home_title"
+           android:paddingBottom="10px"
+           android:paddingTop="10px"
+           android:textColor="@android:color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="@string/ist_setting_title"
+           android:textSize="35px" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/ist_text_martop"
+        android:layout_alignLeft="@+id/ist_ll_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ist_setting_device"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/ist_title_textsize" />
+
+    <LinearLayout
+        android:id="@+id/ist_ll_device"
+        android:layout_below="@+id/ist_home_title"
+        android:layout_marginTop="@dimen/ist_ll_martop"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_common"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_common"
+            app:text="@string/ist_common"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_net"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_net"
+            app:text="@string/ist_net"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_app"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_app"
+            app:text="@string/ist_app"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_storage"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_storage"
+            app:text="@string/ist_storage"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/ist_text_martop"
+        android:layout_below="@+id/ist_ll_device"
+        android:layout_alignLeft="@+id/ist_ll_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ist_setting_system"
+        android:textSize="@dimen/ist_title_textsize" />
+
+    <LinearLayout
+        android:id="@+id/ist_ll_system"
+        android:layout_marginTop="@dimen/ist_ll_martop"
+        android:layout_below="@+id/ist_ll_device"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_date"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_date"
+            app:text="@string/ist_date"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_language"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_language"
+            app:text="@string/ist_language"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_reset"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_reset"
+            app:text="@string/ist_reset"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+        <com.weidingqiang.skyworthui.view.ImageButton
+            android:id="@+id/ist_about_device"
+            style="@style/style_imagebutton"
+            app:src="@drawable/ist_ic_about_device"
+            app:text="@string/ist_about_device"
+            app:text_color="@color/ist_text_setting"
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.view.ImageButton>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

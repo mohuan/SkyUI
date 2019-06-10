@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageButton">
+        <attr name="src" format="reference"/>
+        <attr name="src_size" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+    </declare-styleable>
+	<declare-styleable name="SeekBarPreference">
+        <attr name="minValue" format="integer"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="defaultValue" format="integer"/>
+        <attr name="name" format="string"/>
+    </declare-styleable>
+	
+
+</resources>

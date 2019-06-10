@@ -1,0 +1,239 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="ist_setting_title">设置</string>
+    <string name="ist_setting_device">设备</string>
+    <string name="ist_setting_system">系统</string>
+    <string name="ist_common">常用</string>
+    <string name="ist_net">网络</string>
+    <string name="ist_app">应用</string>
+    <string name="ist_storage">存储</string>
+    <string name="ist_date">日期和时间</string>
+    <string name="ist_language">语言和输入法</string>
+    <string name="ist_reset">恢复出厂设置</string>
+    <string name="ist_about_device">关于设备</string>
+
+    <string name="ist_wifi">WIFI</string>
+    <string name="ist_wlan_ap">WLAN 热点</string>
+    <string name="ist_ethernet">有线网络</string>
+    <string name="ist_mcast">投屏</string>
+    <string name="ist_bluetooth">蓝牙</string>
+    <string name="ist_vpn">VPN</string>
+    <string name="ist_proxy">代理</string>
+    <string name="ist_reset_tip">提示</string>
+    <string name="ist_reset_msg">确定恢复出厂设置吗?</string>
+    
+	
+	
+	
+	<string name="str_intelligent_eye_title" >智能护眼</string>
+	<string name="boot_settings_title">开机设置</string>
+	<string name="str_eth_wakeup">网络唤醒开关</string>
+	<string name="str_hdmi_format">HDMI输出格式</string>
+	<string name="common_settings_title">常用功能</string>
+
+    <string name="str_auto_ip" >自动获取IP</string>
+    <string name="str_static_ip" >静态IP</string>
+    <string name="eth_toggle_title">使用以太网</string>
+    <string name="eth_settings">以太网设置</string>
+    <string name="eth_devices">以太网设备</string>
+    <string name="eth_conf">以太网配置</string>
+    <string name="eth_ip_address">IP地址</string>
+    <string name="eth_ip_string">0.0.0.0</string>
+    <string name="eth_mac_address">物理地址</string>
+    <string name="eth_mac_string">00:00:00:00:00:00</string>
+    <string name="eth_advanced_configure">高级配置</string>
+    <string name="eth_mask_address">子网掩码</string>
+    <string name="eth_dns_address">DNS服务器</string>
+    <string name="eth_gw_address">默认网关</string>
+    <string name="eth_dhcp_choice">动态分配</string>
+    <string name="eth_dev_more">没有可用设备</string>
+    <string name="eth_dev_summaryoff">未连接</string>
+    <string name="eth_dev_summaryon">已连接 -- 使用设备: </string>
+
+    <string name="eth_link_status">Link Status</string>
+    <string name="eth_link_mode">Link Mode</string>
+    <string name="eth_ip_mode">IP模式: </string>
+    <string name="eth_dhcp_mode">动态</string>
+    <string name="eth_manual_mode">静态</string>
+    <string name="eth_ok">确定</string>
+    <string name="eth_cancel">取消</string>
+    <string name="eth_advand">高级</string>
+    <string name="eth_message">确定应用此配置到设备?</string>
+    <string name="network_device_settings_title">网络与设备</string>
+    <string name="eth_settings_title">有线网络</string>
+    <string name="title_wifi_ip_settings_invalid" >IP设置无效</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_back">返回</string>
+
+    <string name="str_model_info_title">型号</string>
+    <string name="str_model">型号:</string>
+    <string name="str_model_info">Android TV</string>
+    <string name="str_cpu">中央处理器:</string>
+    <string name="str_cpu_info">四核 Cortex A53(64Bit)1.4GHz</string>
+    <string name="str_memory">内存:</string>
+    <string name="str_memory_info">1.5GB</string>
+    <string name="str_flash">Flash:</string>
+    <string name="str_flash_info">8GB</string>
+    <string name="str_graphics">3D GPU:</string>
+    <string name="str_graphics_info">Mali450MP4 (4+2) 600MHz</string>
+	<string name="str_cpu_processor">处理器:</string>
+	<string name="str_cpu_processor_text">十核处理器</string>
+
+    <string name="ist_ethernet_ip">IP</string>
+    <string name="ist_ethernet_ip_hint">192.168.1.100</string>
+    <string name="ist_ethernet_gateway">网关</string>
+    <string name="ist_ethernet_gateway_hint">192.168.1.1</string>
+    <string name="ist_ethernet_mask">子网掩码</string>
+    <string name="ist_ethernet_mask_hint">255.255.255.0</string>
+    <string name="ist_ethernet_dns1">DNS 1</string>
+    <string name="ist_ethernet_dns1_hint">192.168.0.1</string>
+    <string name="ist_ethernet_dns2">DNS 2</string>
+    <string name="ist_ethernet_dns2_hint">8.8.4.4</string>
+    <string name="ist_ethernet_disconnect">有线网络未接入</string>
+    <!-- Label for the Band of the connection -->
+    <string name="wifi_band">频段</string>
+    <string name="str_ethernet_mac" >有线 MAC 地址</string>
+    <string name="str_usb_lock">U盘锁</string>
+    <string name="str_boot_channel">开机通道</string>
+    <string name="str_fixed_boot_channel">固定开机通道</string>
+    <string name="str_ops_start_up">OPS 开机启动</string>
+
+    <string name="ist_str_timers_turn_off">定时开关机</string>
+    <string name="timer_selected_time"><xliff:g id="TIP">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>:<xliff:g id="MINUTE">%3$s</xliff:g></string>
+    <string name="timer_on_title">开机时间</string>
+    <string name="timer_off_title">关机时间</string>
+    <string name="timer_select_success">选择了&#160;</string>
+    <string name="timer_select_hour">&#160;时</string>
+    <string name="timer_select_min">&#160;分</string>
+    <string name="timer_view"><xliff:g id="HOUR">%1$s</xliff:g>:<xliff:g id="MINUTE">%2$s</xliff:g></string>
+    <string name="timer_am">上午</string>
+    <string name="timer_pm">下午</string>
+    <string name="timer_select_week_need">没有添加日期</string>
+    <string name="boot_off_setting">开关机设置</string>
+
+
+    
+
+    <string name="service_controller">代理开关</string>
+    <string name="service_summary">开 / 关</string>
+    <string name="host">主机地址</string>
+    <string name="host_summary">代理服务器IP</string>
+    <string name="port">端口</string>
+    <string name="port_summary">代理服务器端口</string>
+    <string name="auth">用户认证</string>
+    <string name="user">用户名</string>
+    <string name="user_summary">代理账号</string>
+    <string name="password">密码</string>
+    <string name="password_summary">代理密码</string>
+    <string name="ntlm">NTLM 认证</string>
+    <string name="ntlm_summary">开启 NTLM / NTLM2 认证
+		method</string>
+    <string name="certificate">证书</string>
+    <string name="certificate_summary">HTTPS认证证书</string>
+    <string name="domain">路由地址</string>
+    <string name="domain_summary">设置NTLM的路由地址</string>
+
+    <!-- proxy type -->
+    <string name="proxy_type">代理类型</string>
+    <string name="proxy_type_summary">选择代理类型</string>
+
+    <string name="ist_language_settings">语言设置</string>
+    <string name="ist_time_settings">时间设置</string>
+     <string name="ist_screen_lock">锁屏设置</string>
+    <string name="ist_samba_share">文件共享</string>
+    <string name="ist_samba_switch">启动开关</string>
+    <string name="ist_samba_protect">密码保护</string>
+    <string name="ist_samba_protect_summary">无密码模式只可浏览文件，密码保护模式可读写文件</string>
+    <string name="ist_samba_pwd_settings">密码设置</string>
+    <string name="ist_samba_old_pwd">旧密码：</string>
+    <string name="ist_samba_pwd_hint">密码不能超过11位</string>
+    <string name="ist_samba_new_pwd">新密码：</string>
+    <string name="ist_samba_new_pwd_again">确认密码:</string>
+    <string name="ist_samba_old_new_dismatch">原始密码不匹配</string>
+    <string name="ist_samba_old_new_equals">原始密码和新密码不能相同</string>
+    <string name="ist_samba_new_again_different">两次输入密码不相同</string>
+    <string name="ist_samba_pwd_null">密码不能为空</string>
+    <string name="ist_samba_switch_sumary">开 / 关</string>
+    <string name="str_power_save">省电模式</string>
+   
+    
+    
+    <string name="users">多用户</string>
+    <string name="create_users">创建用户</string>
+    <string name="user_name">用户名</string>
+    <string name="switch_users">选择用户</string>
+    <string name="add_guest">添加访客</string>
+    <string name="cancel">取消</string>
+    <string name="btn_add">添加</string>
+    <string name="switch_to">是否切换到 "%1$s" ?</string>
+    <string name="sure">确定</string>
+    <string name="adding">正在添加...</string>
+    <string name="adimtator">管理员</string>
+    <string name="currentuser">当前用户( %1$s )</string>
+    <string name="users_num_max">当前用户量已达最大值</string>
+    <string name="remove_users">是否移除 "%1$s" ?</string>
+    <string name="removing">正在移除，请稍等....</string>
+    <string name="remove_sucess">移除成功</string>
+    <string name="input_reqeat">名字相同，请重新输入</string>
+    <string name="reedit">修改信息</string>
+
+     <string name="ist_mcast_enable_summary">无线投屏将在后台监听</string>
+    <string name="ist_mcast_enable_title">打开无线投屏</string>
+    <string name="samba_tip_title">1.请确保本设备与PC在同一局域网内；</string>
+    <string name="samba_tip_add_driver">2.在我的电脑右键菜单中选择"添加映射网络驱动器",输入如下地址按回车键：</string>
+    <string name="samba_login_adress">\\\\<xliff:g id="IP">%1$s</xliff:g>\\share</string>
+    <string name="samba_net_error">暂无网络连接，请检查网络！</string>
+    <string name="ist_brightness">亮度</string>
+    <!-- zhuzhl add. -->
+    <string name="get_ipAddr_error">获取不到IP地址。</string>
+    <!-- add end. -->
+    <string name="ist_timers_limit_max">最多只可设置7组数据</string>
+    <string name="ist_timer_start_tip">请选择开机或者关机日期后再开启</string>
+    
+     <string name="choose_user_title">账号选择</string>
+    <string name="choose_user_summary">当账号多于2个时，则开启账号选择界面</string>
+    <string name="system_runtime_all">系统运行时间</string>
+     <string name="ist_mcast_disable">无线投屏将不再监听其他设备</string>
+     <string name="ist_tv_preview_title">TV 预览窗口</string>
+     <string name="storage_volume_used_emmc" msgid="1303803057698959872">"（共 <xliff:g id="TOTAL">%1$s</xliff:g>/<xliff:g id="TOTAL_EMMC">%2$s</xliff:g>）"</string>
+     <string name="storage_volume_summary_emmc" msgid="7023441974367853372">"已使用 <xliff:g id="USED">%1$s</xliff:g>（可用 <xliff:g id="TOTAL">%2$s</xliff:g>/<xliff:g id="TOTAL_EMMC">%3$s</xliff:g>）"</string>
+    
+     <string name="str_navigation_setting">导航栏设置</string>
+     <string name="ist_energy_conservation_title">节能模式</string>
+    <string name="ist_samab_string_old_pwd_tip">(提示:初始旧密码为:1234)</string>
+    <string name="samba_control_file">3.开始用window系统去操作本设备的文件；</string>
+    <string name="samba_add_link_tip">(提示:在文件夹的地址栏窗口输入如下的地址后回车,同样可以正常使用)</string>
+    
+    <string name="username">用户名</string>
+    <string name="addpassword">添加密码</string>
+    <string name="check_password">请输入密码</string>
+    <string name="password_check_error">密码错误</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="word_too_long">字符过长，请输入少于15个字符</string>
+    <string name="reset_pass">重设密码</string>
+    <string name="super_password">超级密码</string>
+    <string name="new_password">新密码</string>
+    <string name="modify">修改</string>
+    <string name="please_input_pass">请输入密码</string>
+    <string name="wrong_super_password">超级密码错误</string>
+    <string name="modify_success">修改成功</string>
+    <string name="createuser_failed">创建失败</string>
+    <string name="user_create_notice">请注意！当前创建的为非管理员账号，部分系统功能将不能使用，请问是否继续？</string>
+     <string name="admin_right">只有管理员账号才有该权限!</string>
+     
+     <string name="dicom">DICOM</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

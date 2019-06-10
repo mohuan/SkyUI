@@ -1,0 +1,24 @@
+<resources>
+
+
+
+    <style name="title_style">
+        <item name="android:layout_height">50px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20px</item>
+    </style>
+
+    <style name="style_imagebutton">
+        <!--<item name="android:clickable">true</item>-->
+        <item name="android:focusableInTouchMode">true</item>
+	 <!--<item name="android:background">@drawable/ist_shape_gray</item>-->
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">180px</item>
+        <item name="android:layout_height">180px</item>
+        <item name="android:layout_margin">@dimen/ist_cardview_margin</item>
+        <item name="android:elevation">@dimen/ist_elevation</item>
+    </style>
+
+
+
+</resources>

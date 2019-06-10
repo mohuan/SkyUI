@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ist_text_setting">#000000</color>
+    <color name="ist_text_gray">#FFE0E0E0</color>
+    <color name="ist_blue">#87CEFA</color>
+    <color name="ist_text_black">#333333</color>
+    <color name="ist_actionbar_blue">#3266d5</color>
+    <color name="ist_imagebutton_unfocus_color">#4194f3</color>
+    <color name="ist_colorAcent">#3299d5</color>
+    <color name="ist_text_color">#080808</color>
+
+    <!--timer start -->
+    <color name="timer_transparent">#00000000</color>
+    <!--<color name="timer_color_accent">#DA4336</color>-->
+    <color name="timer_color_accent">@color/ist_actionbar_blue</color>
+    <color name="timer_control_highlight_color">#42ffffff</color>
+    <color name="timer_text_color">@android:color/white</color>
+    <color name="timer_split">#FF676565</color>
+    <color name="timer_setting_bg">#ffddddde</color>
+    <color name="timer_clock_white">#ffffff</color>
+    <color name="timer_split_gray">#bcbbc1</color>
+    <color name="timer_bg_gray">#20000000</color>
+    <color name="timer_day_checkbox_black">#000000</color>
+    <!--<color name="timer_checkbox_selected_color">#FFFF0000</color>-->
+    <color name="timer_checkbox_selected_color">@color/ist_actionbar_blue</color>
+    <!--timer end -->
+    <color name="samba_split_gray">#bfbcbbc1</color>
+
+
+    <color name="ist_settings_title">#b9bcc1</color>
+    <color name="ist_settings_body">#e7e7e7</color>
+    <color name="ist_settings_module_bg">#515153</color>
+    <color name="ist_user_color">#3F51B5</color>
+
+</resources>

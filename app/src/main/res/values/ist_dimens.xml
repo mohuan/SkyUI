@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- home -->
+    <dimen name="ist_elevation">5px</dimen>
+    <dimen name="ist_cornerRadius">10px</dimen>
+    <dimen name="ist_cardview_margin">5px</dimen>
+    <dimen name="ist_textsize">15px</dimen>
+    <dimen name="ist_title_textsize">30px</dimen>
+    <!-- <dimen name="ist_text_martop">50px</dimen> -->
+	<dimen name="ist_text_martop">50px</dimen>
+    <dimen name="ist_ll_martop">100px</dimen>
+	<!--<dimen name="ist_ll_martop">100px</dimen>-->
+
+    <!-- net -->
+    <dimen name="ist_net_ll_height">100px</dimen>
+    <dimen name="ist_net_img_marleft">24px</dimen>
+    <dimen name="ist_text_mar_img">24px</dimen>
+    <dimen name="ist_net_img_marright">48px</dimen>
+    <!--ethert-->
+    <dimen name="item_name_size">17.5sp</dimen>
+
+    <dimen name="ist_item_net_height">90px</dimen>
+
+    <dimen name="ist_item_child_name_size">15.5sp</dimen>
+    <dimen name="ist_item_child_val_size">15.5sp</dimen>
+    
+    <dimen name="ist_network_text_marginLeft">40px</dimen>
+
+    <dimen name="ist_actionbar_size">84dp</dimen>
+    <dimen name="ist_switchbar_height">63dp</dimen>
+
+</resources>
