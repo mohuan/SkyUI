@@ -22,7 +22,7 @@ public class ImageButton extends ViewGroup {
     private static final String TAG = ImageButton.class.getSimpleName();
     private int width = 0;
     private int height = 0;
-   // private float zi = 2f;
+//    private float zi = 2f;
 	private float zi = 3f;
     private int mu = 4;
 
@@ -64,7 +64,7 @@ public class ImageButton extends ViewGroup {
         textView = new TextView(context);
         textView.setText(text);
         textView.setTextColor(textcolor);
-        textView.setTextSize(textsize);
+        textView.setTextSize(9);
 
        
         addView(img);
@@ -139,15 +139,15 @@ public class ImageButton extends ViewGroup {
         super.onFocusChanged(gainFocus, direction, previouslyFocusedRect);
 //        Log.e(TAG,"onFocusChanged gainFocus = "+gainFocus + " direction = "+direction);
         if(gainFocus) {
-//            setScaleX(1.2f);
-//            setScaleY(1.2f);
+            setScaleX(1.1f);
+            setScaleY(1.1f);
            // setBackGroundChecked();
           //  setBackgroundResource(R.drawable.ist_shape_blue);
             setBackgroundResource(R.drawable.app_yellow);
         }else
         {
-//            setScaleX(1f);
-//            setScaleY(1f);
+            setScaleX(1f);
+            setScaleY(1f);
             //setBackGroundUnChecked();
            // setBackgroundResource(R.drawable.ist_shape_gray);
 //		        setBackgroundResource(Color.parseColor("0x00000000"));
@@ -162,12 +162,12 @@ public class ImageButton extends ViewGroup {
             //获取焦点
             requestFocus();
 //            Log.e(TAG, "onTouchEvent action = " + event.getAction());
-            setScaleX(1.1f);
-            setScaleY(1.1f);
+//            setScaleX(1.1f);
+//            setScaleY(1.1f);
         }
 		if(event.getAction() == MotionEvent.ACTION_UP) {
-			setScaleX(1f);
-            setScaleY(1f);
+//			setScaleX(1f);
+//            setScaleY(1f);
 		}
         return super.onTouchEvent(event);
     }
