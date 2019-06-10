@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ist_text_setting">#000000</color>
+    <color name="ist_text_setting_tj">#FF837368</color>
     <color name="ist_text_gray">#FFE0E0E0</color>
     <color name="ist_blue">#87CEFA</color>
     <color name="ist_text_black">#333333</color>

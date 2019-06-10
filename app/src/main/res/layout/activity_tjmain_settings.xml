@@ -27,7 +27,9 @@
         android:text="@string/ist_setting_device"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:textSize="@dimen/ist_title_textsize" />
+        android:textSize="@dimen/ist_title_textsize"
+        android:textColor="#FF746458"
+        />
 
     <LinearLayout
         android:id="@+id/ist_ll_device"
@@ -39,40 +41,40 @@
         android:orientation="horizontal">
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_common"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_common"
+            app:src="@drawable/ist_ic_common_tj"
             app:text="@string/ist_common"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_net"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_net"
+            app:src="@drawable/ist_ic_net_tj"
             app:text="@string/ist_net"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_app"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_app"
+            app:src="@drawable/ist_ic_app_tj"
             app:text="@string/ist_app"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_storage"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_storage"
+            app:src="@drawable/ist_ic_storage_tj"
             app:text="@string/ist_storage"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
     </LinearLayout>
@@ -84,7 +86,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ist_setting_system"
-        android:textSize="@dimen/ist_title_textsize" />
+        android:textSize="@dimen/ist_title_textsize"
+        android:textColor="#FF746458"
+        />
 
     <LinearLayout
         android:id="@+id/ist_ll_system"
@@ -96,40 +100,40 @@
         android:orientation="horizontal">
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_date"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_date"
+            app:src="@drawable/ist_ic_date_tj"
             app:text="@string/ist_date"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_language"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_language"
+            app:src="@drawable/ist_ic_language_tj"
             app:text="@string/ist_language"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_reset"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_reset"
+            app:src="@drawable/ist_ic_reset_tj"
             app:text="@string/ist_reset"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
-        <com.weidingqiang.skyworthui.old.view.ImageButton
+        <com.weidingqiang.skyworthui.tianjin.view.ImageButton
             android:id="@+id/ist_about_device"
             style="@style/style_imagebutton"
-            app:src="@drawable/ist_ic_about_device"
+            app:src="@drawable/ist_ic_about_device_tj"
             app:text="@string/ist_about_device"
             app:text_color="@color/ist_text_setting"
-            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.old.view.ImageButton>
+            app:text_size="@dimen/ist_textsize"></com.weidingqiang.skyworthui.tianjin.view.ImageButton>
 
 
     </LinearLayout>
