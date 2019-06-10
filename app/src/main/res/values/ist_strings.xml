@@ -221,6 +221,8 @@
      <string name="admin_right">只有管理员账号才有该权限!</string>
      
      <string name="dicom">DICOM</string>
+
+    <string name="change_source_name">点击更改信号源名称</string>
 </resources>
 
 

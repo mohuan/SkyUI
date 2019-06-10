@@ -33,4 +33,8 @@
     <color name="ist_settings_module_bg">#515153</color>
     <color name="ist_user_color">#3F51B5</color>
 
+    <color name="menuview_text_color">#FF676565</color>
+    <color name="menuview_text_color_tj">#FF676565</color>
+    <color name="gray_ff">#c7c0c0</color>
+    <color name="gray_ff_tj">#c7c0c0</color>
 </resources>
