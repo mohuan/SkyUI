@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -11,14 +11,14 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="50px" >
+            android:layout_height="67px" >
 
             <FrameLayout
                 android:id="@+id/source_title_back"
                 android:layout_width="40px"
                 android:layout_height="40px"
                 android:layout_centerVertical="true"
-              
+
                 android:background="@drawable/selector_source_back"
                 android:clickable="true"
                 android:focusable="true" >
@@ -37,23 +37,26 @@
                 android:gravity="center"
                 android:text="@string/change_source_name"
                 android:textColor="@color/menuview_text_color_tj"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/menuview_text_color_tj" />
+            android:background="#CCCCCC" />
 
         <GridView
             android:id="@+id/source_setting_grid"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20px"
-            android:horizontalSpacing="20px"
-            android:numColumns="4"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="40px"
+            android:layout_marginStart="47px"
+            android:layout_marginEnd="47px"
+            android:horizontalSpacing="41px"
+            android:numColumns="5"
             android:scrollbars="none"
-            android:verticalSpacing="20px" />
+            android:verticalSpacing="24px" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

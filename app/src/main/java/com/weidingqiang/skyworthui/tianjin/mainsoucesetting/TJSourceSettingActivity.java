@@ -139,9 +139,9 @@ public class TJSourceSettingActivity extends Activity {
 	//end zhudj
 
 	public static final int[] CN_NORMAL = {
-			R.drawable.android_normal,R.drawable.ops_focus,R.drawable.hdmi_focus,R.drawable.hdmi_focus,R.drawable.hdmi_focus,
-			R.drawable.vga_focus,R.drawable.ypbpr_focus,R.drawable.ypbpr_focus,
-			R.drawable.atv_focus,R.drawable.dtv_focus};
+			R.drawable.tj_android_normal,R.drawable.tj_ops_focus,R.drawable.tj_hdmi_focus,R.drawable.tj_hdmi_focus,R.drawable.tj_hdmi_focus,
+			R.drawable.tj_vga_focus,R.drawable.tj_ypbpr_focus,R.drawable.tj_ypbpr_focus,
+			R.drawable.tj_atv_focus,R.drawable.tj_dtv_focus};
 	public static final String[] CN_NAME = {"安卓","OPS","前置HDMI","HDMI1","HDMI2","VGA1","AV",
 			"分量","模拟电视","数字电视"};
     private void initData() {
