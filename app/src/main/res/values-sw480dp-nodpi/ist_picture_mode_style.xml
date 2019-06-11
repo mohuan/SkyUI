@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="pic_mode_sty_menu">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">336dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/bg_transparent</item>
+    </style>
+    <!-- seekbar button -->
+    <style name="pic_mode_sty_seekbar_btn">
+        <item name="android:layout_width">405px</item>
+        <item name="android:layout_height">52.5px</item>
+        <item name="android:background">@drawable/ist_menuview_btn_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+		<item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+	<!-- Segmented -->
+	<style name="segmented_sty_seekbar_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52.5px</item>
+        <item name="android:background">@drawable/ist_menuview_btn_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+		<item name="android:layout_gravity">left</item>
+		<item name="android:layout_marginLeft">1dp</item>
+		<item name="android:layout_marginRight">7.5px</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+    <style name="pic_mode_sty_bar">
+        <item name="android:layout_width">240px</item>
+        <item name="android:layout_height">51px</item>
+        <item name="android:layout_gravity">center</item>
+		<item name="android:paddingTop">1.5px</item>
+		<item name="android:paddingBottom">1.5px</item>
+		<item name="android:maxHeight">7.5px</item>
+		<item name="android:minHeight">7.5px</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+		<item name="android:progressDrawable">@drawable/ist_menu_seekbar</item>
+        <item name="android:thumb">@drawable/ist_seekbar_thumb</item>
+        <item name="android:thumbOffset">10.5px</item>
+		<item name="android:splitTrack">false</item>
+        <item name="android:layout_marginRight">0dip</item>
+        <item name="android:visibility">visible</item>
+    </style>
+	<!-- Segmented -->
+	<style name="segmented_mode_sty_bar">
+        <item name="android:layout_width">270px</item>
+        <item name="android:layout_height">51px</item>
+        <item name="android:layout_gravity">center</item>
+		<item name="android:paddingTop">1dp</item>
+		<item name="android:paddingBottom">1dp</item>
+		<item name="android:maxHeight">7.5px</item>
+		<item name="android:minHeight">7.5px</item>
+        <item name="android:max">60</item>
+        <item name="android:progress">30</item>
+		<item name="android:progressDrawable">@drawable/ist_menu_seekbar_time</item>
+        <item name="android:thumb">@drawable/ist_seekbar_thumb</item>
+        <item name="android:thumbOffset">10.5px</item>
+		<item name="android:splitTrack">false</item>
+        <item name="android:layout_marginRight">0dip</item>
+        <item name="android:visibility">visible</item>
+    </style>
+	
+    <style name="pic_mode_colortmp_sty_bar">
+        <item name="android:layout_width">111dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:max">2048</item>
+        <item name="android:progress">50</item>
+        <item name="android:thumb">@drawable/ist_dialog_pressed</item>
+        <item name="android:thumbOffset">0dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="pic_mode_sty_seekbar_name">
+        <item name="android:layout_width">130.5px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">21px</item>
+        <item name="android:textColor">@color/menuview_text_color</item>
+        <item name="android:layout_marginLeft">0dip</item>
+		<item name="android:paddingLeft">6px</item>
+    </style>
+	<!--for Segmented -->
+	<style name="segmented_sty_seekbar_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">22.5px</item>
+        <item name="android:textColor">@color/menuview_text_color</item>
+        <item name="android:layout_marginLeft">7.5px</item>
+		<item name="android:paddingRight">7.5px</item>
+    </style>
+    <style name="pic_mode_sty_seekbar_indicator">
+        <item name="android:layout_width">37.5px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">21px</item>
+        <item name="android:textColor">@color/menuview_text_color</item>
+    </style>
+    <style name="pic_mode_sty_colortmp_indicator">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">@color/menuview_text_color</item>
+    </style>
+	
+	<!-- equalizer -->
+	<style name="equalizer_ly_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52.5px</item>
+        <item name="android:background">@drawable/ist_menuview_btn_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginLeft">15px</item>
+		
+		<item name="android:layout_marginRight">15px</item>
+		<item name="android:paddingLeft">6px</item>
+		<item name="android:paddingRight">3px</item>
+        <!--item name="android:gravity">center</item-->
+    </style>
+	<style name="equalizer_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|left</item>
+		<item name="android:layout_gravity">center</item>
+        <item name="android:textSize">21px</item>
+        <item name="android:textColor">@color/menuview_text_color</item>
+    </style>
+	
+	<!-- button -->
+    <style name="button_style">
+		<item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52.5px</item>
+        <item name="android:background">@drawable/ist_menuview_btn_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginLeft">1.5px</item>
+		<item name="android:layout_marginRight">7.5px</item>
+		<item name="android:paddingLeft">6px</item>
+		<item name="android:paddingRight">3px</item>
+        <!--item name="android:gravity">center</item-->
+    </style>
+	<style name="button_image">
+        <item name="android:layout_width">35px</item>
+        <item name="android:layout_height">35px</item>
+		<item name="android:gravity">right</item>
+		<item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+	<style name="button_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--item name="android:gravity">center</item-->
+		<item name="android:layout_gravity">center</item>
+        <item name="android:textSize">22.5px</item>
+        <item name="android:textColor">@color/menuview_text_color</item>
+    </style>
+	
+	<style name="mybutton_linearlayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:paddingTop">3px</item>
+		<item name="android:paddingBottom">3px</item>
+		<item name="android:layout_marginRight">15px</item>
+		<item name="android:layout_marginLeft">15px</item>
+		<item name="android:background">@drawable/ist_menuview_btn_bg</item>
+    </style>	
+	<style name="mybutton_image">
+        <item name="android:layout_width">48px</item>
+        <item name="android:layout_height">48px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+	<style name="mybutton_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+		<item name="android:layout_marginTop">1dp</item>
+		<item name="android:textSize">18dip</item>
+		<item name="android:textColor">@color/menuview_text_color</item>
+    </style>
+	
+	<style name="separated_view">
+		<item name="android:background">#80ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">5px</item>
+        <item name="android:layout_marginRight">5px</item>
+		<item name="android:layout_marginTop">5dp</item>
+		<item name="android:layout_marginBottom">5dp</item>
+    </style>
+</resources>

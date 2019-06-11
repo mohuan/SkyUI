@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+		android:id="@+id/linearlayout_setting_mode"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="7.5px"
+		android:paddingTop="1.5px"
+		android:paddingBottom="7.5px"
+		android:background="@drawable/ist_background_with_shadow"
+		android:visibility="gone"
+		android:orientation="vertical"	>
+		<LinearLayout
+			android:id="@+id/linearlayout_timers"
+			style="@style/button_style">
+			<TextView
+				style="@style/button_textview_style"
+				android:text="@string/str_set_times" />
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="right"
+				android:layout_gravity="center_vertical">
+				<ImageView
+					style="@style/button_image"
+					android:src="@drawable/ist_menu_timeset_btn"
+					/>
+			</LinearLayout>	
+		</LinearLayout>	
+	</LinearLayout>
+	<!-- No signal shutdown -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:paddingTop="1.5px"
+		android:paddingLeft="3px"
+		android:paddingBottom="7.5px"
+		android:background="@drawable/ist_background_with_shadow"
+		android:orientation="vertical"	>
+		<TextView
+			android:id="@+id/nosignal_shutdown"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="22.5px"
+			android:textColor="@color/menuview_text_color"
+			android:layout_marginTop="3px"
+			android:layout_marginBottom="3px"
+			android:text="@string/str_nosignal_shutdown" />
+		<FrameLayout 
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			>
+			<ImageView
+				android:layout_width="247.5px"
+				android:layout_height="wrap_content"
+				android:paddingTop="19.5px"
+				android:paddingLeft="28.5px"
+				android:src="@drawable/ist_segmented" />
+			<LinearLayout
+				android:id="@+id/linearlayout_nosignal_shutdown"
+				style="@style/segmented_sty_seekbar_btn">
+				<SeekBar style="@style/segmented_mode_sty_bar" />
+				<TextView style="@style/pic_mode_sty_seekbar_indicator" />
+				<TextView
+					style="@style/segmented_sty_seekbar_name"
+					android:text="@string/str_nosignal_min" />
+			</LinearLayout>
+			
+		</FrameLayout>
+	</LinearLayout>	
+
+	<!-- Source Identify -->
+	<LinearLayout
+		android:id="@+id/linearlayout_autosourceident"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="7.5px"
+		android:paddingTop="1.5px"
+		android:paddingLeft="3px"
+		android:paddingBottom="7.5px"
+		android:background="@drawable/ist_background_with_shadow"
+		android:orientation="vertical"	>
+		<TextView
+			android:id="@+id/autosourceident"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="22.5px"
+			android:textColor="@color/menuview_text_color"
+			android:layout_marginTop="3px"
+			android:layout_marginBottom="3px"
+			android:text="@string/str_set_autosourceident" />
+		<RadioGroup  
+			android:id="@+id/radio_autosourceident"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="7.5px"
+			android:orientation="horizontal">
+			<com.weidingqiang.skyworthui.old.view.MyRadioButton
+				android:id="@+id/ident_auto"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:textColor="@color/menuview_text_color"
+				android:text="@string/str_ident_auto"  
+				android:textSize="20px"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:checked="true"/>
+			<com.weidingqiang.skyworthui.old.view.MyRadioButton
+				android:id="@+id/ident_Manual"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:text="@string/str_ident_Manual"
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:textSize="20px"
+				android:checked="true"/>  
+			<com.weidingqiang.skyworthui.old.view.MyRadioButton
+				android:id="@+id/ident_off"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:text="@string/str_ident_off"
+				android:textSize="20px"
+				android:checked="true"/> 
+		</RadioGroup> 
+	</LinearLayout>		
+	
+	<!-- Eye protection -->
+	<LinearLayout
+		android:id="@+id/linearlayout_eye_protection"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:paddingTop="1.5px"
+		android:paddingLeft="3px"
+		android:paddingBottom="7.5px"
+		android:background="@drawable/ist_background_with_shadow"
+		android:orientation="vertical"	>
+		<TextView
+			android:id="@+id/eye_protection"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="22.5px"
+			android:textColor="@color/menuview_text_color"
+			android:layout_marginTop="3px"
+			android:layout_marginBottom="3px"
+			android:text="@string/str_set_eye_protection" />
+		<RadioGroup  
+			android:id="@+id/radio_eye_protection"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:orientation="horizontal">  
+			<com.weidingqiang.skyworthui.old.view.EyeRadioButton
+				android:id="@+id/eye_dimming"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:textColor="@color/menuview_text_color"
+				android:text="@string/str_eye_on"  
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:textSize="20px"
+				android:checked="false"/>
+			<com.weidingqiang.skyworthui.old.view.EyeRadioButton
+				android:id="@+id/eye_filter"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:text="@string/str_eye_filter"
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:visibility="gone"
+				android:textSize="20px"
+				android:checked="false"/>  
+			<com.weidingqiang.skyworthui.old.view.EyeRadioButton
+				android:id="@+id/eye_off"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:text="@string/str_eye_off"
+				android:textSize="20px"
+				android:checked="false"/> 
+		</RadioGroup> 
+	</LinearLayout>	
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_color">#13324f</color>
+    <color name="no_selected_color">#FFFFFFFF</color>
+    <color name="no_enabled_color">#99ccff</color>
+	<color name="transparent">#00FFFFFF</color>
+	<color name="item_selected_color">#ff1990f4</color>
+    <color name="item_no_selected_color">#FFFFFFFF</color>
+	<color name="blue_color">#F0CA9B</color>
+	<drawable name="ist_dialog_normal">#FFFFFFFF</drawable>
+	<drawable name="ist_dialog_pressed">#FFD3F2FB</drawable>
+	<drawable name="bg_transparent">#00FFFFFF</drawable>
+	
+	<color name="system_volume_color">#ff336699</color>
+	
+	<color name="ist_system_blue">#FF3367d6</color>
+	<drawable name="ist_system_blue">#FF3367d6</drawable>
+	
+	<color name="ist_system_blue1">#FF4285f4</color>
+	<drawable name="ist_system_blue1">#FF4285f4</drawable>
+	
+	<!-- menu start-->
+	<color name="carview_bg">#FFE8E7E7</color>
+	<color name="menuview_text_color">#FF676565</color>
+	<color name="menuview_text_color_disable">#FFc8c6c6</color>
+	<color name="menuview_item_blue">#ff3e8efa</color>
+	
+	<drawable name="nav_separated_view">#FFE8E7E7</drawable>
+	<!--
+	<drawable name="nav_button_bg_view">#7Fe8e7e7</drawable>
+	-->
+	<drawable name="nav_button_bg_view">#00000000</drawable>
+	
+	<drawable name="menuview_check_blue">#ff3e8efa</drawable>
+	<drawable name="menuview_check_g">#FF676565</drawable>
+
+	<color name="ist_red">#aaff0000</color>
+	<color name="ist_cpu_warning_transparent">#50000000</color>
+	
+	
+	<color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_ff">#c7c0c0</color>
+    <color name="blue_ff">#3e8ffb</color>
+    <color name="blue_fff">#803e8ffb</color>
+
+</resources>

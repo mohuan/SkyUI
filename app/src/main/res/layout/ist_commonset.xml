@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- Source Identify -->
+	<LinearLayout
+		android:id="@+id/linearlayout_autosourceident"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:paddingTop="1dp"
+		android:paddingBottom="5dp"
+		android:background="@drawable/ist_background_with_shadow"
+		android:orientation="vertical"	>
+		<TextView
+			android:id="@+id/autosourceident"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dip"
+			android:textColor="@color/menuview_text_color"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:text="@string/str_set_autosourceident" />
+		<RadioGroup  
+			android:id="@+id/radio_comm_autosourceident"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:orientation="horizontal">  
+			<RadioButton
+				android:id="@+id/comm_ident_auto"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:text="@string/str_ident_auto"  
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:checked="true"/>
+			<RadioButton
+				android:id="@+id/comm_ident_Manual"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:text="@string/str_ident_Manual"
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:checked="true"/>  
+			<RadioButton
+				android:id="@+id/comm_ident_off"  
+				android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"  
+				android:text="@string/str_ident_off"
+				android:textColor="@color/menuview_text_color"
+				android:button="@drawable/ist_btn_radio_holo_light"
+				android:checked="true"/> 
+		</RadioGroup> 
+	</LinearLayout>		
+
+</LinearLayout>

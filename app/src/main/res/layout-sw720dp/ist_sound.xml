@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white">
+		<!-- For Picture Mode -->
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginBottom="7.5px"
+			android:paddingTop="1.5px"
+			android:paddingBottom="7.5px"
+			android:background="@drawable/ist_background_with_shadow"
+            android:orientation="vertical" >
+			<TextView
+				android:id="@+id/tv_pic_picturemode"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="24px"
+				android:textColor="#746458"
+				android:layout_margin="15px"
+				android:text="@string/str_sound_soundmode" />
+			<!-- For Bass -->
+			<LinearLayout
+				android:id="@+id/linearlayout_sound_bass"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView
+					style="@style/pic_mode_sty_seekbar_name"
+					android:textColor="#837368"
+					android:text="@string/str_sound_bass" />
+				<TextView style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+
+			<!-- For Treble -->
+			<LinearLayout
+				android:id="@+id/linearlayout_sound_treble"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView
+					style="@style/pic_mode_sty_seekbar_name"
+					android:textColor="#837368"
+					android:text="@string/str_sound_treble" />
+				<TextView style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+
+			<!--View style="@style/separated_view"/-->
+
+			<!-- for Equalizer -->
+			<LinearLayout
+				android:id="@+id/linearlayout_sound_equalizer"
+				style="@style/equalizer_ly_style">
+				<TextView
+					style="@style/equalizer_textview_style"
+					android:textColor="#837368"
+					android:text="@string/str_sound_equalizer" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="right"
+					android:paddingRight="1.5px"
+					android:layout_gravity="center_vertical">
+					<ImageView
+						style="@style/button_image"
+						android:src="@drawable/ist_menu_equalizer_btn"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<View android:layout_width="match_parent"
+					android:layout_height="1px"
+					android:background="#DCD2C2"
+					android:layout_marginLeft="21px"
+					android:layout_marginRight="21px"
+					android:layout_marginTop="27px"
+				/>
+		</LinearLayout>
+
+		<!-- For AVC -->
+		<LinearLayout
+			android:id="@+id/linearlayout_sound_avc"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+			 android:layout_marginBottom="7.5px"
+			 android:paddingTop="1.5px"
+			 android:paddingLeft="1.5px"
+			 android:paddingBottom="1.5px"
+			 android:background="@drawable/ist_background_with_shadow"
+             android:orientation="horizontal" >
+			 <TextView
+				android:id="@+id/tv_sound_spdifoutput"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				 android:layout_marginTop="19px"
+				 android:layout_marginLeft="15px"
+				android:textSize="20px"
+				android:textColor="@color/menuview_text_color"
+				android:text="@string/str_sound_avc" />
+             <LinearLayout
+             	android:layout_width="match_parent"
+             	android:layout_height="wrap_content"
+				android:paddingRight="10.5px"
+             	android:gravity="right">
+				 <com.weidingqiang.skyworthui.old.view.MyCheckBox
+				     android:id="@+id/checkBox_sound_avc"
+				     android:layout_width="wrap_content"
+					 android:button="@drawable/ist_btn_check"
+				     android:layout_height="wrap_content"/>
+			</LinearLayout>
+
+         </LinearLayout>
+
+		<!-- For SPDIF OUTPUT -->
+		<LinearLayout
+			android:id="@+id/linearlayout_sound_spdifoutput"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="7.5px"
+			android:paddingTop="1.5px"
+			android:paddingBottom="1.5px"
+			android:background="@drawable/ist_background_with_shadow"
+			android:orientation="vertical"	>
+			<TextView
+				android:id="@+id/tv_sound_spdifoutput"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="22.5px"
+				android:textColor="#746458"
+				android:layout_margin="15px"
+				android:text="@string/str_sound_spdifoutput" />
+			<RadioGroup
+				android:id="@+id/radio_sound_spdifoutput"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="7.5px"
+				android:orientation="horizontal">
+				<com.weidingqiang.skyworthui.old.view.MyRadioButton
+					android:id="@+id/spdif_pcm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_spdif_pcm"
+					android:textColor="#837368"
+					android:button="@drawable/ist_btn_radio_holo_light"
+					android:textSize="20px"
+					android:checked="false"/>
+				<com.weidingqiang.skyworthui.old.view.MyRadioButton
+					android:id="@+id/spdif_raw"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_spdif_raw"
+					android:textColor="#837368"
+					android:button="@drawable/ist_btn_radio_holo_light"
+					android:textSize="20px"
+					android:checked="false"/>
+
+				<com.weidingqiang.skyworthui.old.view.MyRadioButton
+					android:id="@+id/spdif_off"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_spdif_off"
+					android:textColor="#837368"
+					android:button="@drawable/ist_btn_radio_holo_light"
+					android:textSize="20px"
+					android:checked="false"/>
+			</RadioGroup>
+		</LinearLayout>
+
+	</LinearLayout>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+</LinearLayout>

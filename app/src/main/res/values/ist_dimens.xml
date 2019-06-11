@@ -45,4 +45,6 @@
     <!-- The width of the view containing the menu/ime navigation bar icons -->
     <dimen name="navigation_extra_key_width">36dp</dimen>
 
+    <dimen name="text_time">45px</dimen>
+
 </resources>

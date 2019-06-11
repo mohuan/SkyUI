@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<!-- For Picture Mode -->
+		<LinearLayout
+			android:id="@+id/linearlayout_pic_mode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginBottom="7.5px"
+			android:paddingTop="1.5px"
+			android:paddingBottom="7.5px"
+			android:background="@drawable/ist_background_with_shadow">
+			<TextView
+				android:id="@+id/tv_pic_picturemode"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="24px"
+				android:textColor="@color/menuview_text_color"
+				android:layout_margin="3px"
+				android:text="@string/str_pic_picturemode" />
+			<!-- For Contrast -->
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_contrast"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView android:text="@string/str_pic_contrast" style="@style/pic_mode_sty_seekbar_name" />
+				<TextView style="@style/pic_mode_sty_seekbar_indicator"/>
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+			<!-- For Brightness -->
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_brightness"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_brightness"/>
+				<TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+			<!-- For Hue -->
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_hue"
+				android:visibility="gone"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_hue"/>
+				<TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+			<!-- For Sharpness -->
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_sharpness"
+				android:visibility="gone"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_sharpness"/>
+				<TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+			<!-- For Saturation -->
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_saturation"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_saturation"/>
+				<TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+			<!-- For BackLight -->
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_backlight"
+				android:visibility="gone"
+				style="@style/pic_mode_sty_seekbar_btn">
+				<TextView style="@style/pic_mode_sty_seekbar_name"  android:text="@string/str_pic_backlight"/>
+				<TextView  style="@style/pic_mode_sty_seekbar_indicator" />
+				<SeekBar style="@style/pic_mode_sty_bar" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+
+		<!-- Zoom Mode -->
+		<LinearLayout
+			android:id="@+id/linearlayout_pic_zoommode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginBottom="7.5px"
+			android:paddingTop="1.5px"
+			android:paddingBottom="7.5px"
+			android:background="@drawable/ist_background_with_shadow">
+			<TextView
+				android:id="@+id/tv_pic_zoommode"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="24px"
+				android:textColor="@color/menuview_text_color"
+				android:layout_margin="3px"
+				android:text="@string/str_pic_zoommode" />
+			<RadioGroup
+				android:id="@+id/radio_pic_zoommode"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="7.5px"
+				android:orientation="horizontal">
+				<com.weidingqiang.skyworthui.old.view.MyRadioButton
+					android:id="@+id/zoommode_16_9"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_zoommode_16_9"
+					android:textColor="@color/menuview_text_color"
+					android:button="@drawable/ist_btn_radio_holo_light"
+					android:textSize="20px"
+					android:checked="true"/>
+				<com.weidingqiang.skyworthui.old.view.MyRadioButton
+					android:id="@+id/zoommode_p2p"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_zoommode_p2p"
+					android:textColor="@color/menuview_text_color"
+					android:button="@drawable/ist_btn_radio_holo_light"
+					android:textSize="20px"
+					android:checked="true"/>
+				<com.weidingqiang.skyworthui.old.view.MyRadioButton
+					android:id="@+id/zoommode_4_3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_zoommode_4_3"
+					android:textColor="@color/menuview_text_color"
+					android:button="@drawable/ist_btn_radio_holo_light"
+					android:textSize="20px"
+					android:checked="true"/>
+			</RadioGroup>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearlayout_setting_mode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="7.5px"
+			android:paddingTop="1.5px"
+			android:paddingBottom="7.5px"
+			android:background="@drawable/ist_background_with_shadow"
+			android:orientation="vertical"	>
+			<LinearLayout
+				android:id="@+id/linearlayout_pic_pcimagemode"
+				android:visibility="gone"
+				style="@style/button_style">
+				<TextView
+					style="@style/button_textview_style"
+					android:text="@string/str_pc_pcimagemode" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="right"
+					android:layout_gravity="center_vertical">
+					<ImageView
+						style="@style/button_image"
+						android:src="@drawable/ist_menu_vga_btn"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/linearlayout_tv_setchannel"
+				android:visibility="gone"
+				style="@style/button_style">
+				<TextView
+					style="@style/button_textview_style"
+					android:text="@string/str_cha_channel" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="right"
+					android:layout_gravity="center_vertical">
+					<ImageView
+						style="@style/button_image"
+						android:src="@drawable/ist_menu_tvchan_btn"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/linearlayout_hdmi_setting"
+				android:visibility="gone"
+				style="@style/button_style">
+				<TextView
+					style="@style/button_textview_style"
+					android:text="@string/str_hdmi_setting" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="right"
+					android:layout_gravity="center_vertical">
+					<ImageView
+						style="@style/button_image"
+						android:src="@drawable/ist_menu_hdmiset_btn"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

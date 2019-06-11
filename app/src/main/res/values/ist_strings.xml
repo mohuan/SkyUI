@@ -223,6 +223,50 @@
      <string name="dicom">DICOM</string>
 
     <string name="change_source_name">点击更改信号源名称</string>
+    <string name="ist_time">时间</string>
+    <string name="ist_ether">有线网络</string>
+    <string name="ist_setting">设置</string>
+    <string name="ist_screenshot">截屏</string>
+    <string name="ist_timer">计时器</string>
+    <string name="ist_noline">投屏专家</string>
+
+    <string name="str_pic_picturemode">图像调整</string>
+    <string name="str_pic_contrast">对比度</string>
+    <string name="str_pic_brightness">亮度</string>
+    <string name="str_pic_sharpness">锐度</string>
+    <string name="str_pic_hue">色相</string>
+    <string name="str_pic_saturation">饱和度</string>
+    <string name="str_pic_backlight">背光</string>
+    <string name="str_pic_zoommode">显示调整</string>
+
+    <string name="str_pc_pcimagemode">电脑画面调整</string>
+    <string name="str_cha_channel">搜台</string>
+    <string name="str_hdmi_setting">HDMI 设置</string>
+    <string name="str_zoommode_16_9">16:9</string>
+    <string name="str_zoommode_p2p">点对点</string>
+    <string name="str_zoommode_4_3">4:3</string>
+
+    <string name="str_sound_soundmode">音效调整</string>
+    <string name="str_sound_bass">低音</string>
+    <string name="str_sound_treble">高音</string>
+    <string name="str_sound_equalizer">均衡器</string>
+    <string name="str_sound_avc">自动音量控制</string>
+    <string name="str_sound_spdifoutput">数字声音输出</string>
+    <string name="str_spdif_pcm">PCM</string>
+    <string name="str_spdif_raw">RAW</string>
+    <string name="str_spdif_off">关</string>
+
+    <string name="str_set_times">定时开关机</string>
+    <string name="str_nosignal_shutdown">无信号待机</string>
+    <string name="str_nosignal_min">分钟</string>
+    <string name="str_set_autosourceident">信号源识别</string>
+    <string name="str_set_eye_protection">智能护眼</string>
+    <string name="str_ident_auto">自动</string>
+    <string name="str_ident_Manual">询问</string>
+    <string name="str_ident_off">关</string>
+    <string name="str_eye_filter">滤光</string>
+    <string name="str_eye_off">关</string>
+    <string name="str_eye_on">开</string>
 
     <string name="accessibility_tvSource_button">TvSource</string>
     <string name="accessibility_tvMenu_button">TvMenu</string>
