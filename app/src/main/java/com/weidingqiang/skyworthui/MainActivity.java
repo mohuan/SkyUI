@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.weidingqiang.skyworthui.old.mainsoucesetting.SourceSettingActivity;
+import com.weidingqiang.skyworthui.old.navigationbar.NavigationBarActivity;
 import com.weidingqiang.skyworthui.old.setting.MainSetingsActivity;
 import com.weidingqiang.skyworthui.tianjin.mainsoucesetting.TJSourceSettingActivity;
 import com.weidingqiang.skyworthui.tianjin.setting.TJMainSettingsActivity;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button setting_but_tj;
     private Button source_setting_but_old;
     private Button source_setting_but_tj;
+    private Button navgation_but_old;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setting_but_tj.setOnClickListener(this);
         source_setting_but_old.setOnClickListener(this);
         source_setting_but_tj.setOnClickListener(this);
+        navgation_but_old = (Button) this.findViewById(R.id.navgation_but_old);
+        navgation_but_old.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.source_setting_but_tj:
                 startActivity(TJSourceSettingActivity.newInstance(getApplicationContext()));
+                break;
+            case R.id.navgation_but_old:
+                startActivity(NavigationBarActivity.newInstance(getApplicationContext()));
                 break;
         }
     }

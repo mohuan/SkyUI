@@ -37,4 +37,7 @@
     <color name="menuview_text_color_tj">#746458</color>
     <color name="gray_ff">#c7c0c0</color>
     <color name="gray_ff_tj">#c7c0c0</color>
+
+    <drawable name="nav_separated_view">#FFE8E7E7</drawable>
+    <drawable name="nav_button_bg_view">#00000000</drawable>
 </resources>

@@ -223,6 +223,12 @@
      <string name="dicom">DICOM</string>
 
     <string name="change_source_name">点击更改信号源名称</string>
+
+    <string name="accessibility_tvSource_button">TvSource</string>
+    <string name="accessibility_tvMenu_button">TvMenu</string>
+    <string name="accessibility_tvComment_button">TvComment</string>
+    <string name="accessibility_volumeAdd_button">VolumeAdd</string>
+    <string name="accessibility_hideBar_button">HideBar</string>
 </resources>
 
 

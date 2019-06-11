@@ -29,4 +29,20 @@
     <dimen name="ist_actionbar_size">84dp</dimen>
     <dimen name="ist_switchbar_height">63dp</dimen>
 
+
+
+    <dimen name="navigation_key_90_width">75px</dimen>
+    <dimen name="navigation_key_90_height">75px</dimen>
+    <dimen name="navigation_key_90_height_haowei">50px</dimen>
+    <dimen name="navigation_key_90_width_haowei">65px</dimen>
+    <dimen name="navigation_key_0_width">120px</dimen>
+    <dimen name="navigation_key_0_height">75px</dimen>
+    <!-- add luyinlong -->
+    <dimen name="navigation_key_0_width_haowei">80px</dimen>
+    <!-- add luyinlong -->
+
+
+    <!-- The width of the view containing the menu/ime navigation bar icons -->
+    <dimen name="navigation_extra_key_width">36dp</dimen>
+
 </resources>
