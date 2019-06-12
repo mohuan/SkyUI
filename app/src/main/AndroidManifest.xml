@@ -15,6 +15,8 @@
         <activity android:name=".old.setting.MainSetingsActivity" />
         <activity android:name=".old.mainsoucesetting.SourceSettingActivity" />
         <activity android:name=".tianjin.mainsoucesetting.TJSourceSettingActivity" />
+        <activity android:name=".old.menu.MenuActivity" />
+        <activity android:name=".tianjin.menu.TJMenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

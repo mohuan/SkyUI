@@ -70,4 +70,24 @@
             android:text="国学 navgation"
             />
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/menu_but_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原 menu"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/menu_but_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国学 menu"
+            />
+    </RelativeLayout>
 </LinearLayout>

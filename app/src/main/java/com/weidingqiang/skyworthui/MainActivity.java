@@ -6,9 +6,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.weidingqiang.skyworthui.old.mainsoucesetting.SourceSettingActivity;
+import com.weidingqiang.skyworthui.old.menu.MenuActivity;
 import com.weidingqiang.skyworthui.old.navigationbar.NavigationBarActivity;
 import com.weidingqiang.skyworthui.old.setting.MainSetingsActivity;
 import com.weidingqiang.skyworthui.tianjin.mainsoucesetting.TJSourceSettingActivity;
+import com.weidingqiang.skyworthui.tianjin.menu.TJMenuActivity;
 import com.weidingqiang.skyworthui.tianjin.setting.TJMainSettingsActivity;
 
 /**
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button source_setting_but_old;
     private Button source_setting_but_tj;
     private Button navgation_but_old;
+    private Button menu_but_old;
+    private Button menu_but_tj;
 
 
     @Override
@@ -43,6 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         source_setting_but_tj.setOnClickListener(this);
         navgation_but_old = (Button) this.findViewById(R.id.navgation_but_old);
         navgation_but_old.setOnClickListener(this);
+        menu_but_old = (Button) this.findViewById(R.id.menu_but_old);
+        menu_but_old.setOnClickListener(this);
+        menu_but_tj = (Button) this.findViewById(R.id.menu_but_tj);
+        menu_but_tj.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +70,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.navgation_but_old:
                 startActivity(NavigationBarActivity.newInstance(getApplicationContext()));
+                break;
+            case R.id.menu_but_old:
+                startActivity(MenuActivity.newInstance(getApplicationContext()));
+                break;
+            case R.id.menu_but_tj:
+                startActivity(TJMenuActivity.newInstance(getApplicationContext()));
                 break;
         }
     }
