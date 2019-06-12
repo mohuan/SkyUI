@@ -10,10 +10,84 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+
+
+    //签名
+    signingConfigs {
+        debug {
+            //这样写就得把demo.jk文件放在项目目录
+            storeFile file("/asconfig/key.jks")
+            storePassword "123456"
+            keyAlias "hello"
+            keyPassword "123456"
+            v2SigningEnabled true
+        }
         release {
+            //这样写就得把demo.jk文件放在项目目录
+            storeFile file("/asconfig/key.jks")
+            storePassword "123456"
+            keyAlias "hello"
+            keyPassword "123456"
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            zipAlignEnabled false
+            shrinkResources false
+            multiDexEnabled true
+
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            //混淆
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//
+//            multiDexEnabled true
+//            //注：Gradle2.0以上的版本minifyEnabled字段为true时已经包含了shrinkResources,在代码优化时会自动去掉多余资源，
+//            //所以在打正式包时也不需要设置shrinkResources字段。
+//            //移除无用的resource文件
+//            shrinkResources true
+//            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            //签名
+//            signingConfig signingConfigs.release
+
+        }
+
+        release {
+
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            multiDexEnabled true
+
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            //混淆
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//
+//            multiDexEnabled true
+//            //注：Gradle2.0以上的版本minifyEnabled字段为true时已经包含了shrinkResources,在代码优化时会自动去掉多余资源，
+//            //所以在打正式包时也不需要设置shrinkResources字段。
+//            //移除无用的resource文件
+//            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
         }
     }
 }
