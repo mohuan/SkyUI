@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- add by xun 20170720-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="12px"
+		android:padding="7.5px"
+		android:visibility="invisible"
+		app:cardBackgroundColor="#ffffff"
+		app:cardCornerRadius="12px"
+		android:focusable="false"
+		app:cardElevation="12px">
+		<TextClock
+			android:id="@+id/tv_time"
+			android:layout_width="match_parent"
+			android:layout_height="150px"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_vertical"
+			android:padding="15px"
+			android:text="@string/ist_time"
+			android:textColor="@color/menuview_text_color"
+			android:textSize="@dimen/text_time" />
+	</android.support.v7.widget.CardView>	
+	
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="12px"
+		android:padding="7.5px"
+		app:cardBackgroundColor="#ffffff"
+		app:cardCornerRadius="10px"
+		app:cardElevation="12px">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="22.5px"
+			android:paddingTop="22.5px">
+			<LinearLayout
+			    android:id="@+id/top_row_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<!-- net -->
+				<LinearLayout
+					android:id="@+id/linearLayout_ether"
+					style="@style/mybutton_linearlayout"
+					android:nextFocusUp="@+id/linearLayout_ether">
+					<ImageView
+						style="@style/mybutton_image_tj"
+						android:src="@drawable/tj_ethernet_on"
+						/>
+					<TextView
+						style="@style/mybutton_textview_tj"
+						android:text="@string/ist_ether" />
+				</LinearLayout>
+				<!-- wifi -->
+				<LinearLayout
+					android:id="@+id/linearLayout_wifi"
+					style="@style/mybutton_linearlayout"
+					android:nextFocusUp="@+id/linearLayout_wifi">
+					<ImageView
+						style="@style/mybutton_image_tj"
+						android:src="@drawable/stat_sys_wifi_on_tj"
+						/>
+					<TextView
+						style="@style/mybutton_textview_tj"
+						android:text="@string/ist_wifi" />
+				</LinearLayout>
+				<!-- eshare -->
+				<LinearLayout
+					android:id="@+id/linearLayout_eshare"
+					style="@style/mybutton_linearlayout"
+					android:nextFocusUp="@+id/linearLayout_eshare">
+					<ImageView
+						style="@style/mybutton_image_tj"
+						android:src="@drawable/ist_menu_sel_noline_set_tj"
+						/>
+					<TextView
+						android:id="@+id/tv_eshare"
+						style="@style/mybutton_textview_tj"
+						android:text="@string/ist_noline" />
+				</LinearLayout>
+				
+			</LinearLayout>	
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="22.5px"
+				android:orientation="horizontal">
+				<!-- setting -->
+				<LinearLayout
+					android:id="@+id/linearLayout_setting"
+					style="@style/mybutton_linearlayout">
+					<ImageView
+						style="@style/mybutton_image_tj"
+						android:src="@drawable/ist_tipicon_sel_set_tj"
+						/>
+					<TextView
+						style="@style/mybutton_textview_tj"
+						android:text="@string/ist_setting" />
+				</LinearLayout>
+				
+				<!-- shotcut -->
+				<LinearLayout
+					android:id="@+id/linearLayout_shotcut"
+					style="@style/mybutton_linearlayout">
+					<ImageView
+						style="@style/mybutton_image_tj"
+						android:src="@drawable/ist_menu_sel_shotcut_tj"
+						/>
+					<TextView
+						style="@style/mybutton_textview_tj"
+						android:text="@string/ist_screenshot" />
+				</LinearLayout>
+				<!-- timer -->
+				<LinearLayout
+					android:id="@+id/linearLayout_timer"
+					style="@style/mybutton_linearlayout">
+					<ImageView
+						style="@style/mybutton_image_tj"
+						android:src="@drawable/ist_menu_sel_timer_tj"
+						/>
+					<TextView
+						style="@style/mybutton_textview_tj"
+						android:text="@string/ist_timer" />
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout>	
+	</android.support.v7.widget.CardView>
+		
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="12px"
+		android:padding="7.5px"
+		app:cardBackgroundColor="#ffffff"
+		app:cardCornerRadius="10px"
+		app:cardElevation="12px"
+		>	
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="22.5px"
+			android:paddingLeft="15px"
+			android:paddingRight="15px"
+			android:paddingTop="22.5px">
+			<ViewFlipper android:id="@+id/view_flipper_tv_menu"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:persistentDrawingCache="animation"
+				android:layout_marginBottom="3px"
+				android:flipInterval="50" >
+				<include
+					android:id="@+id/layout_pic"
+					layout="@layout/ist_picture" />
+				<include
+					android:id="@+id/layout_sound"
+					layout="@layout/ist_sound" />
+				<include
+					android:id="@+id/layout_more"
+					layout="@layout/ist_menumore" />
+				<include
+					android:id="@+id/layout_commonet"
+					layout="@layout/ist_commonset" />
+			</ViewFlipper>
+			
+			<LinearLayout
+				  android:id="@+id/menumode"
+				  android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_gravity="center"
+				  android:orientation="horizontal">
+				  
+				<com.weidingqiang.skyworthui.old.view.CommonImageBtn
+					android:id="@+id/img_pic_btn"
+					android:layout_width="0px"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@drawable/ist_menuview_btn_bg"/>
+				<com.weidingqiang.skyworthui.old.view.CommonImageBtn
+					android:id="@+id/img_sound_btn"
+					android:layout_width="0px"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@drawable/ist_menuview_btn_bg"/>
+				<com.weidingqiang.skyworthui.old.view.CommonImageBtn
+					android:id="@+id/img_more_btn"
+					android:layout_width="0px"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@drawable/ist_menuview_btn_bg"/>					
+
+			</LinearLayout>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+</LinearLayout>
