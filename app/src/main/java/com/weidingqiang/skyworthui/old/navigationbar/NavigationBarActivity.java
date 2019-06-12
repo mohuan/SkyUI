@@ -9,7 +9,10 @@ import com.weidingqiang.skyworthui.R;
 import com.weidingqiang.skyworthui.tianjin.setting.TJMainSettingsActivity;
 
 public class NavigationBarActivity extends AppCompatActivity {
-
+    /**
+     * 手动调整了 image  centerInside
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

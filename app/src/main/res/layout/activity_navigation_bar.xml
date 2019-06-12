@@ -28,13 +28,15 @@
 
             <LinearLayout
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:clipChildren="false"
                 android:clipToPadding="false"
                 android:id="@+id/nav_buttons"
                 android:background="@drawable/nav_button_bg_view"
-                android:animateLayoutChanges="true">
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center"
+                >
 
                 <!-- navigation controls -->
                 <!--<FrameLayout-->
@@ -82,7 +84,7 @@
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:src="@drawable/ist_backbg"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:layout_weight="0"
                     />
                 <View
@@ -93,11 +95,12 @@
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/nav_separated_view"/>
 
-                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView android:id="@+id/home"
+                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView
+                    android:id="@+id/home"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:src="@drawable/ist_homebg"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:layout_weight="0"
                     />
                 <View
@@ -109,11 +112,12 @@
                     android:background="@drawable/nav_separated_view"
                     android:visibility="visible"
                     />
-                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView android:id="@+id/recent_apps"
+                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView
+                    android:id="@+id/recent_apps"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:src="@drawable/ist_recentbg"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:layout_weight="0"
                     />
                 <View
@@ -125,13 +129,13 @@
                     android:background="@drawable/nav_separated_view"
                     android:visibility="visible"
                     />
-                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView
                     android:id="@+id/tv_source"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:src="@drawable/ist_sourcebg"
                     android:layout_weight="0"
                     android:contentDescription="@string/accessibility_tvSource_button"
@@ -145,13 +149,13 @@
                     android:background="@drawable/nav_separated_view"
                     android:visibility="visible"
                     />
-                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView
                     android:id="@+id/tv_menu"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:src="@drawable/ist_bar_settingbg"
                     android:layout_weight="0"
                     android:contentDescription="@string/accessibility_tvMenu_button"
@@ -165,13 +169,13 @@
                     android:background="@drawable/nav_separated_view"
                     android:visibility="visible"
                     />
-                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView
                     android:id="@+id/tv_comment"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:src="@drawable/ist_commentbg"
                     android:layout_weight="0"
                     android:contentDescription="@string/accessibility_tvComment_button"
@@ -185,12 +189,12 @@
                     android:background="@drawable/nav_separated_view"
                     android:visibility="visible"
                     />
-                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView
                     android:id="@+id/mute"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:src="@drawable/ist_mute"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:layout_weight="0"
                     android:visibility="gone"
                     />
@@ -203,14 +207,14 @@
                     android:layout_marginBottom="2dp"
                     android:visibility="gone"
                     android:background="@drawable/nav_separated_view"/>
-                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView
                     android:id="@+id/volume"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:layout_weight="0"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:contentDescription="@string/accessibility_volumeAdd_button"
                     android:src="@drawable/ist_volumebg"
                     />
@@ -222,12 +226,12 @@
                     android:layout_marginBottom="2dp"
                     android:background="@drawable/nav_separated_view"
                     android:visibility="visible"/>
-                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.KeyButtonView
                     android:id="@+id/listen"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:src="@drawable/ist_listen"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:layout_weight="0"
                     android:visibility="gone"
                     />
@@ -241,14 +245,14 @@
                     android:visibility="gone"
                     android:background="@drawable/nav_separated_view"/>
 
-                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView 
+                <com.weidingqiang.skyworthui.old.navigationbar.policy.KeyButtonView
                     android:id="@+id/brightness"
                     android:layout_height="@dimen/navigation_key_0_height"
                     android:layout_width="@dimen/navigation_key_0_width"
                     android:layout_weight="0"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
-                    android:scaleType="center"
+                    android:scaleType="centerInside"
                     android:contentDescription="@string/accessibility_volumeAdd_button"
                     android:src="@drawable/ist_brightnessbg"
                     />
